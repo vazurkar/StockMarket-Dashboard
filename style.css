@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  background-color: rgb(231, 109, 9);
+}
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+.main {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 69% 30%;
+  margin: 0.5em;
+}
+.chart {
+  width: 100%;
+  height: 100%;
+  background-color: #141414;
+  border: 1px solid #ccc;
+}
+.list {
+  width: 100%;
+  height: 100%;
+  background-color: #6a6767;
+  border: 1px solid #ccc;
+  margin-right: 0.2rem;
+}
+.details {
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+}
+.details p {
+  padding: 1rem;
+}
+.item {
+  display: flex;
+  text-decoration: none;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin: 1rem;
+  gap: 4rem;
+}
+.item li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.profit {
+  color: #6ced70;
+} /* light green */
+.breakeven {
+  color: #c37676;
+} /* gray */
+.loss {
+  color: #ec0d23;
+}
+.name {
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.name:hover {
+  color: #edc9c9;
+  transform: scale(1.3);
+}
+#rangeButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 1rem;
+}
+#rangeButtons button {
+  padding: 5px 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}   
+#rangeButtons button:hover {
+  background-color: #887f7f;
+}
